@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal Berita LPM Bangkit FAI UNISSULA</title>
+    <style>
+        /* Pengaturan Dasar */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+
+        /* Bagian Header & Logo */
+        header {
+            background-color: #ffffff;
+            text-align: center;
+            padding: 25px 20px;
+            border-bottom: 4px solid #cc0000; /* Warna merah sesuai logo */
+        }
+        header img {
+            max-width: 180px;
+            height: auto;
+        }
+        header h1 {
+            margin: 15px 0 5px;
+            font-size: 26px;
+            color: #111;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        header p {
+            margin: 0;
+            color: #555;
+            font-size: 14px;
+        }
+
+        /* Menu Navigasi */
+        nav {
+            background-color: #1a1a1a;
+            display: flex;
+            justify-content: center;
+            padding: 12px 0;
+            flex-wrap: wrap;
+        }
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 600;
+            font-size: 15px;
+            transition: color 0.3s ease;
+        }
+        nav a:hover {
+            color: #cc0000;
+        }
+
+        /* Tata Letak Konten Utama */
+        .container {
+            max-width: 1100px;
+            margin: 30px auto;
+            padding: 0 20px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 25px;
+        }
+        .main-content {
+            flex: 3;
+            min-width: 300px;
+        }
+        .sidebar {
+            flex: 1;
+            min-width: 250px;
+        }
+
+        /* Desain Kartu Berita */
+        .article-card {
+            background: #ffffff;
+            margin-bottom: 25px;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            border: 1px solid #eaeaea;
+        }
+        .article-card img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+        .article-content {
+            padding: 20px;
+        }
+        .article-category {
+            background-color: #cc0000;
+            color: #fff;
+            padding: 4px 10px;
+            font-size: 12px;
+            font-weight: bold;
+            border-radius: 3px;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+        .article-title {
+            margin: 0 0 10px;
+            font-size: 22px;
+            color: #111;
+            line-height: 1.4;
+        }
+        .article-meta {
+            font-size: 13px;
+            color: #888;
+            margin-bottom: 15px;
+        }
+        .article-excerpt {
+            line-height: 1.6;
+            color: #444;
+            margin-bottom: 15px;
+        }
+        .read-more {
+            color: #cc0000;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        /* Desain Sidebar Login Redaksi */
+        .login-box {
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            border: 1px solid #eaeaea;
+            border-top: 4px solid #1a1a1a;
+        }
+        .login-box h3 {
+            margin-top: 0;
+            color: #111;
+        }
+        .login-box p {
+            font-size: 14px;
+            line-height: 1.5;
+            color: #555;
+            margin-bottom: 20px;
+        }
+        .btn-login {
+            display: block;
+            width: 100%;
+            box-sizing: border-box;
+            background: #cc0000;
+            color: #fff;
+            text-align: center;
+            padding: 12px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+        .btn-login:hover {
+            background: #990000;
+        }
+
+        /* Bagian Kaki (Footer) */
+        footer {
+            background-color: #1a1a1a;
+            color: #ccc;
+            text-align: center;
+            padding: 25px 20px;
+            margin-top: 40px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header dengan Logo -->
+    <header>
+        <!-- Mengambil file image.png sebagai logo -->
+        <img src="image.png" alt="Logo LPM Bangkit">
+        <h1>Portal Berita LPM Bangkit</h1>
+        <p>Fakultas Agama Islam - Universitas Islam Sultan Agung</p>
+    </header>
+
+    <!-- Navigasi Kategori -->
+    <nav>
+        <a href="#">Beranda</a>
+        <a href="#">Seputar Kampus</a>
+        <a href="#">Opini Mahasiswa</a>
+        <a href="#">Sastra & Budaya</a>
+        <a href="#">Galeri Kegiatan</a>
+    </nav>
+
+    <!-- Konten Utama -->
+    <div class="container">
+        <!-- Kolom Berita -->
+        <div class="main-content">
+            
+            <div class="article-card">
+                <!-- Ruang untuk foto berita yang diupload -->
+                <div style="background:#e0e0e0; height:300px; display:flex; align-items:center; justify-content:center; color:#666; font-size:18px;">
+                    [Area Foto Liputan Ditampilkan di Sini]
+                </div>
+                <div class="article-content">
+                    <span class="article-category">Berita Utama</span>
+                    <h2 class="article-title">Semangat Baru Jurnalisme Kampus Melalui Rapat Kerja Tahun 2026</h2>
+                    <div class="article-meta">Diunggah oleh: Tim Redaksi | 4 April 2026</div>
+                    <p class="article-excerpt">Semarang - Dalam rangka menyusun program satu periode ke depan, agenda rapat kerja tahunan ini menjadi titik tolak bagi para pengurus untuk meningkatkan literasi digital dan kualitas publikasi informasi di lingkungan fakultas...</p>
+                    <a href="#" class="read-more">Baca Selengkapnya &raquo;</a>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Sidebar Samping -->
+        <div class="sidebar">
+            <div class="login-box">
+                <h3>Ruang Redaksi</h3>
+                <p>Portal khusus bagi jajaran pengurus dan reporter untuk mengunggah draf narasi berita, karya desain, serta dokumentasi foto.</p>
+                <a href="#" class="btn-login">Login Ruang Redaksi</a>
+                <p style="font-size: 12px; margin-top: 15px; color:#888; text-align:center;">*Hanya anggota dengan akses izin yang dapat menerbitkan tulisan.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Lembaga Pers Mahasiswa Bangkit FAI UNISSULA. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
